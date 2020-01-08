@@ -1,11 +1,62 @@
-<!DOCTYPE html>
+{% load staticfiles %}
+{% load static %}
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>codedaddies list</title>    
+        <title> Codenoob's Paradise</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
     </head>
     <body>
-        <h2> Testing to see if this works!</h2>
-        <hr />
+            <nav>
+                <div class="container nav-wrapper">
+                    <a href="/" class="brand-logo">CodeNoob's World!</a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a href="/">HomePage</a></li>
+                    </ul>
+                </div>
+            </nav>>
+        <h1 style="text-align:center"> Search on CodeNoob's World</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col s4">
+                    <!-- promocontent from here -->
+                    <div class="center">
+                        <i class="large material-icons" style="color: black" >flash_on</i>
+                        <p>Fast Web Scraper</p>
+                        <p class="light center"> scrape away right here with beautiful GUI :)</p>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="center">
+                        <i class="large material-icons" style="color: black">near_me</i>
+                        <p>Filter your searches on a click</p>
+                        <p class="light center">We built in functionality to filter based on pricing</p>
+                    </div>
+                </div>
+                <div class="col s4">
+                    <div class="center">
+                        <i class="large material-icons" style="color: black">chrome_reader_mode</i>
+                        <p> Much better Frontend to Craigslist</p>
+                        <p class="light center">We built this with ♥ </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% block content %}
+
+        {% endblock content %}
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
     </body>
 </html>
